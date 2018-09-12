@@ -1,6 +1,18 @@
 # scala-project-template
-
 A skeletal Scala/Gradle project. It includes Scala, ScalaTest, JUnit, [Mockito](http://mockito.org/), and the [gradle-scalatest](https://github.com/maiflai/gradle-scalatest) plugin, as well as [Log4J 1.2](http://wiki.apache.org/logging/log4j1) and a console-only [log4j.xml](src/test/resources/log4j.xml) for testing. 
+
+
+## Learning Points
+
+Things I've learnt from this project:
+1. Problem: Gradle 3.3 not compatible with java 6, need java 7 or more.
+Gradle 3.3 requires Java 7 or later to run. You are currently using Java 6.
+-- Turns out Java 10 (latest of my updates) is also not good here. Sync worked only when I set the sdk to java 8.
+-- I didn't uninstall java 10. File->Other Settings->Default Project Structure and set JDK Location to Java 8.
+
+2. Problem: Java home issue
+-- JAVA_HOME is set to an invalid directory: /Library/Java/Home
+-- Set Java_Home to libexec instead of Java/Home "export JAVA_HOME=`/usr/libexec/java_home`"
 
 ## Installation
 
