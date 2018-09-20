@@ -1,4 +1,4 @@
-# scala-project-template
+# scalawithgradle
 A skeletal Scala/Gradle project. It includes Scala, ScalaTest, JUnit, [Mockito](http://mockito.org/), and the [gradle-scalatest](https://github.com/maiflai/gradle-scalatest) plugin, as well as [Log4J 1.2](http://wiki.apache.org/logging/log4j1) and a console-only [log4j.xml](src/test/resources/log4j.xml) for testing. 
 
 
@@ -13,6 +13,11 @@ Gradle 3.3 requires Java 7 or later to run. You are currently using Java 6.
 2. Problem: Java home issue
 -- JAVA_HOME is set to an invalid directory: /Library/Java/Home
 -- Set Java_Home to libexec instead of Java/Home "export JAVA_HOME=`/usr/libexec/java_home`"
+
+3. Renaming Repo
+- Renaming project name (ProjectStructure > project name) won't change the repo folder name.
+- Just have to change the project name, close intellij, rename manually using the finder folders, reopen (not import) the project
+- Name should be different now 
 
 ## Installation
 
