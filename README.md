@@ -17,7 +17,10 @@ Gradle 3.3 requires Java 7 or later to run. You are currently using Java 6.
 3. Renaming Repo
 - Renaming project name (ProjectStructure > project name) won't change the repo folder name.
 - Just have to change the project name, close intellij, rename manually using the finder folders, reopen (not import) the project
-- Name should be different now 
+- Repo name should be different now
+- But interestingly, even though the github link is different (ive changed the name of the repo in github also), im still pushing to the original http..
+- Ok so looks like it just can happily push correctly. but to change the nameof the repo in github, need to...
+```git remote set-url origin new_url```
 
 ## Installation
 
